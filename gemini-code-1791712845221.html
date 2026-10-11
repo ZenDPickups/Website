@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的品牌名稱 - 專業手工吉他拾音器</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --accent-color: #d4af37; /* 金色，帶有高質感音響的感覺 */
+            --text-color: #e0e0e0;
+            --text-muted: #9e9e9e;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px 40px 20px;
+            background: linear-gradient(to bottom, #1a1a1a, var(--bg-color));
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero-product {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 40px;
+            margin: 30px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .product-info {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .product-info h2 {
+            color: #ffffff;
+            margin-top: 0;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .features li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .features li::before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .audio-section {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 15px;
+        }
+
+        .btn-buy {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #121212;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: opacity 0.2s;
+        }
+
+        .btn-buy:hover {
+            opacity: 0.85;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BRAND NAME 拾音器</h1>
+        <p>還原木吉他最純粹的自然共鳴</p>
+    </header>
+
+    <div class="container">
+        <!-- 產品介紹區 -->
+        <div class="hero-product">
+            <div class="product-info" style="flex: 1; text-align: center; background: #2a2a2a; padding: 60px 20px; border-radius: 6px; color: var(--text-muted);">
+                [ 這裡放拾音器產品或安裝在吉他上的精美照片 ]
+            </div>
+            <div class="product-info">
+                <h2>旗艦款：Model-X 雙源拾音系統</h2>
+                <p>專為現代指彈與彈唱樂手設計，結合壓電晶片與高靈敏度麥克風，完美捕捉箱體空氣感與顆粒分明的弦音。</p>
+                <ul class="features">
+                    <li>主動式雙軌混音設計</li>
+                    <li>免破壞性擴孔，輕鬆安裝</li>
+                    <li>極低底噪，動態反應靈敏</li>
+                </ul>
+                <a href="#contact" class="btn-buy">前往選購 / 了解經銷</a>
+            </div>
+        </div>
+
+        <!-- 音色試聽區 -->
+        <div class="audio-section">
+            <h2>音色試聽 (Audio Demo)</h2>
+            <p style="color: var(--text-muted);">戴上耳機，感受最真實的原音重現</p>
+            <!-- 之後把 src 改成你的音檔連結 (例如 audio.mp3) -->
+            <audio controls>
+                <source src="your-audio-file.mp3" type="audio/mpeg">
+                您的瀏覽器不支援音訊播放器
+            </audio>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>聯絡我們 / 合作洽詢：your-email@example.com</p>
+        <p>&copy; 2026 你的品牌名稱. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
